@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clasificador de Ropa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificador de Ropa</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <canvas id="canvas" width="200" height="200"></canvas>
+        <button onclick="runModel()">Run Model</button>
+        <p id="classification">Clasificación: </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="app.js"></script>
+    <footer id="footer">
+        <p>Hecho con ❤️ por Saul Dael Guzman Hernandez</p>
+    </footer>
+</body>
+</html>
