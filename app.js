@@ -2,7 +2,7 @@ let model;
 // Función asincrónica para cargar el modelo desde un archivo JSON
 async function loadModel() {
      // Utiliza TensorFlow.js para cargar el modelo desde el archivo 'model.json'
-    model = await tf.loadLayersModel('/model.json');
+    model = await tf.loadLayersModel('https://sauldael.github.io/ClasificadorDeRopa/model.json');
     console.log('Modelo Cargado.....');
 }
 
